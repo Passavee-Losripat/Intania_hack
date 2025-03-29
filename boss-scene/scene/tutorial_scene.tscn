@@ -1,15 +1,16 @@
-[gd_scene load_steps=28 format=4 uid="uid://b37ybnyghkybi"]
+[gd_scene load_steps=29 format=4 uid="uid://dmksi0a2gkwf4"]
 
-[ext_resource type="Script" uid="uid://bq3p8vm25ndlj" path="res://intro_scene.gd" id="1_6pmbo"]
-[ext_resource type="Texture2D" uid="uid://drkqw8u6ekaly" path="res://art/tilesets/floors/flooring.png" id="2_6pmbo"]
-[ext_resource type="Texture2D" uid="uid://c2r8aygmb1uxp" path="res://art/tilesets/floors/wooden.png" id="3_l4tuc"]
-[ext_resource type="Texture2D" uid="uid://bjoa5e8vdexkc" path="res://art/tilesets/walls/wooden_door.png" id="4_6pmbo"]
-[ext_resource type="Texture2D" uid="uid://cai28v8j0y0i5" path="res://art/Slime1_Walk_full.png" id="5_6pmbo"]
-[ext_resource type="Texture2D" uid="uid://b1sbscc2svdk0" path="res://art/princess.png" id="6_6pmbo"]
+[ext_resource type="Script" uid="uid://bb51731hceqhm" path="res://scene/tutorial_scene.gd" id="1_qjywv"]
+[ext_resource type="Texture2D" uid="uid://c2r8aygmb1uxp" path="res://art/tilesets/floors/wooden.png" id="2_egb8l"]
+[ext_resource type="Texture2D" uid="uid://drkqw8u6ekaly" path="res://art/tilesets/floors/flooring.png" id="3_74q6g"]
+[ext_resource type="Texture2D" uid="uid://bjoa5e8vdexkc" path="res://art/tilesets/walls/wooden_door.png" id="4_664t1"]
+[ext_resource type="Texture2D" uid="uid://cai28v8j0y0i5" path="res://art/Slime1_Walk_full.png" id="5_cgvbt"]
+[ext_resource type="Texture2D" uid="uid://c1bm5jpgmv5ii" path="res://art/mathteacher.png" id="6_qjywv"]
+[ext_resource type="Texture2D" uid="uid://cgie3cwbvbbm0" path="res://art/objects/potion.png" id="7_egb8l"]
 
 [sub_resource type="Animation" id="Animation_7bpvc"]
 resource_name = "Intro"
-length = 17.5
+length = 25.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -17,10 +18,10 @@ tracks/0/path = NodePath("AnimationPlayer/Characters/slime:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.813711, 2, 14.9333, 15.2333, 15.5667, 16, 16.4333, 16.8333),
+"times": PackedFloat32Array(0, 0.813711, 2, 22.8, 23.2333, 23.523, 23.8, 24.0333, 24.3139),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(117, 296), Vector2(117, 296), Vector2(350, 296), Vector2(350, 296), Vector2(412, 232), Vector2(519, 195), Vector2(717, 185), Vector2(821, 261), Vector2(1001, 258)]
+"values": [Vector2(117, 296), Vector2(117, 296), Vector2(350, 296), Vector2(350, 296), Vector2(350, 296), Vector2(404, 219), Vector2(433, 219), Vector2(473, 220), Vector2(795, 293)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -29,10 +30,10 @@ tracks/1/path = NodePath("AnimationPlayer/UI/Panel:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2.07713, 3.8, 5.39581, 8.7, 12.5746, 14.6333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 2.07713, 3.8, 5.1, 8.7, 12.5746, 15.1, 16.9667, 19.6, 20.3333, 21.4, 22.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false, true, false, true, false, true, false]
+"values": [false, true, false, true, false, true, false, true, false, false, true, false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -41,10 +42,10 @@ tracks/2/path = NodePath("AnimationPlayer/UI/Panel/VBoxContainer/RichTextLabel:v
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(1.9, 2.63333, 3.8142, 5.43333, 7.23333),
-"transitions": PackedFloat32Array(1, 1.07177, 1.07177, 1, 1),
+"times": PackedFloat32Array(1.9, 2.63333, 5.06667, 7.33333, 8.68879, 12.574, 14.2333, 15.1113, 16.3333, 18.2, 19.8667, 20.6667, 21.2),
+"transitions": PackedFloat32Array(1, 6.49802, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 1.0, 1.0, 0.0, 1.0]
+"values": [0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -53,10 +54,10 @@ tracks/3/path = NodePath("AnimationPlayer/UI/Panel/VBoxContainer/Label:text")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(1.86667, 4.84431, 12.5746),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(1.86667, 1.87057, 4.85178, 12.5746, 15.7721, 20.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["สไลม์", "เจ้าหญิง", "สไลม์"]
+"values": ["Slime", "Slime", "อาจารย์คณิต", "Slime", "อาจารย์คณิต", "Slime"]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -65,11 +66,12 @@ tracks/4/path = NodePath("AnimationPlayer/UI/Panel/VBoxContainer/RichTextLabel:t
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(1.15449, 4.26667, 12.5746),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(1.1618, 4.26723, 12.5658, 16.9374, 19.9108),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": ["แต่งงานกันนะต้าว", "อ๋อไม่อ่ะ อยากแต่งกับคนปกติ
-", "มุแง้ งั้นเดี๋ยวเป็นคนละจะมาหานะต้าว"]
+"values": ["อาจารย์ครับ ผมอยากกลายเป็นคนอ่า
+
+", "ป้าข้างบ้านบ่นว่าราชาพหุนามมีนํ้ายากลายเป็นคนอยู่นะ ลองเรียนคณิตศาสตร์ดูมั้ย เผื่อได้", "แง! แค่แก้สมการหนูยังทำไม่ได้ ละหนูจะไปทำไรกินอ่าจารย์", "งั้นแกต้องออกไปเรียนรู้โลกกว้าง ออกไปลองแก้สมการจริง ๆ ดูซะ", "อิหยังนะ"]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -83,6 +85,78 @@ tracks/5/keys = {
 "update": 0,
 "values": [0.0, 0.0, -0.698132, 0.698132, -0.698132, 0.698132, 0.0]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Characters/teacher:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(22.4, 23.3667, 23.6, 23.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(501, 295), Vector2(397, 285), Vector2(397, 285), Vector2(433, 285)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Characters/teacher:sprite_frames")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Characters/Potion:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.73333, 6.3, 8.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_egb8l"]
+atlas = ExtResource("6_qjywv")
+region = Rect2(0, 0, 1280, 1280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74q6g"]
+atlas = ExtResource("6_qjywv")
+region = Rect2(1280, 0, 1280, 1280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_664t1"]
+atlas = ExtResource("6_qjywv")
+region = Rect2(0, 1280, 1280, 1280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgvbt"]
+atlas = ExtResource("6_qjywv")
+region = Rect2(1280, 1280, 1280, 1280)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wbcio"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egb8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74q6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_664t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgvbt")
+}],
+"loop": true,
+"name": &"math_teacher",
+"speed": 3.0
+}]
 
 [sub_resource type="Animation" id="Animation_fy8cc"]
 length = 0.001
@@ -160,6 +234,42 @@ tracks/5/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Characters/teacher:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(501, 295)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Characters/teacher:sprite_frames")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_wbcio")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Characters/Potion:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8ru3q"]
 _data = {
@@ -168,11 +278,11 @@ _data = {
 }
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l4tuc"]
-texture = ExtResource("3_l4tuc")
+texture = ExtResource("2_egb8l")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqhkb"]
-texture = ExtResource("2_6pmbo")
+texture = ExtResource("3_74q6g")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -190,7 +300,7 @@ texture = ExtResource("2_6pmbo")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2niiw"]
-texture = ExtResource("4_6pmbo")
+texture = ExtResource("4_664t1")
 0:0/0 = 0
 1:0/0 = 0
 
@@ -200,35 +310,35 @@ sources/1 = SubResource("TileSetAtlasSource_bqhkb")
 sources/2 = SubResource("TileSetAtlasSource_2niiw")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l4tuc"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bqhkb"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2niiw"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7bpvc"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fy8cc"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8ru3q"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pnjjl"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nwrug"]
-atlas = ExtResource("5_6pmbo")
+atlas = ExtResource("5_cgvbt")
 region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8ksdd"]
@@ -263,44 +373,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8ksdd"]
-atlas = ExtResource("6_6pmbo")
-region = Rect2(0, 0, 1280, 1280)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_chkbw"]
-atlas = ExtResource("6_6pmbo")
-region = Rect2(1280, 0, 1280, 1280)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ge82y"]
-atlas = ExtResource("6_6pmbo")
-region = Rect2(0, 1280, 1280, 1280)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0w3lv"]
-atlas = ExtResource("6_6pmbo")
-region = Rect2(1280, 1280, 1280, 1280)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_wbcio"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8ksdd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_chkbw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ge82y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0w3lv")
-}],
-"loop": true,
-"name": &"princess_idle",
-"speed": 5.0
-}]
-
-[node name="IntroScene" type="Node2D"]
-script = ExtResource("1_6pmbo")
+[node name="tutorial_scene" type="Node2D"]
+script = ExtResource("1_qjywv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -350,6 +424,14 @@ visible_ratio = 0.0
 
 [node name="Characters" type="Node2D" parent="AnimationPlayer"]
 
+[node name="teacher" type="AnimatedSprite2D" parent="AnimationPlayer/Characters"]
+position = Vector2(501, 295)
+scale = Vector2(0.209766, 0.209375)
+sprite_frames = SubResource("SpriteFrames_wbcio")
+animation = &"math_teacher"
+autoplay = "math_teacher"
+frame_progress = 0.762939
+
 [node name="slime" type="AnimatedSprite2D" parent="AnimationPlayer/Characters"]
 position = Vector2(117, 296)
 scale = Vector2(3.17969, 3.23437)
@@ -358,10 +440,7 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.556255
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer/Characters"]
-position = Vector2(501, 295)
-scale = Vector2(0.209766, 0.209375)
-sprite_frames = SubResource("SpriteFrames_wbcio")
-animation = &"princess_idle"
-autoplay = "princess_idle"
-frame_progress = 0.893361
+[node name="Potion" type="Sprite2D" parent="AnimationPlayer/Characters"]
+position = Vector2(551, 220)
+scale = Vector2(2.01562, 1.9375)
+texture = ExtResource("7_egb8l")

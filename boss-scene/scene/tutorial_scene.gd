@@ -8,4 +8,4 @@ func _ready() -> void:
 
 func _on_animation_finished(anim_name: String) -> void:
 	print(anim_name + " finished!")
-	get_tree().change_scene_to_file("res://scripts/tutorial.tscn")
+	get_tree().change_scene_to_file("res://scene/world_map.tscn")
