@@ -1,6 +1,6 @@
-[gd_scene load_steps=29 format=4 uid="uid://dmksi0a2gkwf4"]
+[gd_scene load_steps=29 format=4 uid="uid://c5tdmeugwlttp"]
 
-[ext_resource type="Script" uid="uid://bb51731hceqhm" path="res://scene/tutorial_scene.gd" id="1_qjywv"]
+[ext_resource type="Script" path="res://scene/tutorial_scene.gd" id="1_qjywv"]
 [ext_resource type="Texture2D" uid="uid://c2r8aygmb1uxp" path="res://art/tilesets/floors/wooden.png" id="2_egb8l"]
 [ext_resource type="Texture2D" uid="uid://drkqw8u6ekaly" path="res://art/tilesets/floors/flooring.png" id="3_74q6g"]
 [ext_resource type="Texture2D" uid="uid://bjoa5e8vdexkc" path="res://art/tilesets/walls/wooden_door.png" id="4_664t1"]

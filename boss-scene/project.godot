@@ -11,13 +11,19 @@ config_version=5
 [application]
 
 config/name="boss scene"
+<<<<<<< Updated upstream
 run/main_scene="uid://cpdqjxrbnacvb"
+||||||| Stash base
+run/main_scene="uid://q44owoyodi8s"
+=======
+run/main_scene="uid://croy510df1rh6"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[display]
+[autoload]
 
-window/stretch/scale=4.01
+global="*res://global.gd"
 
 [input]
 
