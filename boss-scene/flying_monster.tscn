@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4l25fmm44enc"]
+
+[ext_resource type="Script" uid="uid://vaidwspehsh" path="res://flying_monster.gd" id="1_oj6u3"]
+[ext_resource type="Texture2D" uid="uid://bvwjoiote03kb" path="res://icon.svg" id="2_xwlx6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uq0xk"]
+size = Vector2(130.5, 117)
+
+[node name="FlyingMonster" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_oj6u3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xwlx6")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.25, -1)
+shape = SubResource("RectangleShape2D_uq0xk")

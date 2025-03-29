@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpdqjxrbnacvb"]
+
+[ext_resource type="PackedScene" uid="uid://d4l25fmm44enc" path="res://flying_monster.tscn" id="1_0cutk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jput1"]
+size = Vector2(57, 410)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0cutk"]
+size = Vector2(1148, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6e7u2"]
+size = Vector2(78, 416)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ujqnb"]
+size = Vector2(1152, 59)
+
+[node name="field" type="Node2D"]
+
+[node name="wall" type="StaticBody2D" parent="."]
+
+[node name="left" type="CollisionShape2D" parent="wall"]
+position = Vector2(-30.5, 206)
+shape = SubResource("RectangleShape2D_jput1")
+
+[node name="top" type="CollisionShape2D" parent="wall"]
+position = Vector2(574, -31)
+shape = SubResource("RectangleShape2D_0cutk")
+
+[node name="right" type="CollisionShape2D" parent="wall"]
+position = Vector2(804, 210)
+shape = SubResource("RectangleShape2D_6e7u2")
+
+[node name="down" type="CollisionShape2D" parent="wall"]
+position = Vector2(575, 444)
+shape = SubResource("RectangleShape2D_ujqnb")
+
+[node name="FlyingMonster" parent="." instance=ExtResource("1_0cutk")]
+position = Vector2(558, 202)
